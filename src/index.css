@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.menuCard {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  padding:15px;
+}
+
+.menuCard img{
+  max-width: 100px;
+}
+.counter input{
+  width: 50px;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.badge-danger{
+  background-color: red;;
+}
