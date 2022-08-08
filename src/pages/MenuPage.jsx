@@ -23,6 +23,7 @@ export default function Menu () {
 		  for (const key in data) {
 			const item = {
 			  id: key,
+			  key:key,
 			  ...data[key],
 			};
   
@@ -45,8 +46,9 @@ export default function Menu () {
 	return (
 		<div>
 			<div className='h3 mb-2' id='Pizzanians'>Pick you pizza</div>
-			<MenuList className='d-flex flex-column w-50' data={loadedPizza}/>
+			<MenuList className='d-flex flex-column w-50' data={loadedPizza} key="1" />
 			<Cart   className='w-50'/>
 		</div>
 	);
 }
+

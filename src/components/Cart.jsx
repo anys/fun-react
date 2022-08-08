@@ -26,6 +26,7 @@ function Cart({items,IncreaseQuantity,DecreaseQuantity,DeleteCart}){
                         <th></th>
                         <th>Name</th>
                         <th>Price</th>
+                        <th>Size</th>
                         <th>Cheese</th>
                         <th>Quantity</th>
                         <th>Total Price</th>
@@ -39,6 +40,7 @@ function Cart({items,IncreaseQuantity,DecreaseQuantity,DeleteCart}){
                             <td><span className="badge badge-danger"  style={{cursor:'pointer'}} onClick={()=>DeleteCart(key)}>X</span></td>
                             <td>{item.name}</td>
                             <td>$ {item.price}</td>
+                            <td>{item.size}</td>
                             <td>{item.cheese}</td>
                             <td>
                                     <span className="btn btn-primary" style={{margin:'2px'}} onClick={()=>DecreaseQuantity(key)}>-</span>

@@ -4,7 +4,6 @@ import {GET_ALL_PRODUCT,GET_NUMBER_CART,ADD_CART, DECREASE_QUANTITY, INCREASE_QU
 const initProduct = {
     numberCart:0,
     Carts:[],
-    _products:[]
 }
 
 function todoProduct(state = initProduct,action){
@@ -45,6 +44,7 @@ function todoProduct(state = initProduct,action){
                         quantity:1,
                         name:action.payload.name,
                         cheese:action.payload.cheese,
+                        size:action.payload.size,
                         price:action.payload.price
                     }
                     state.Carts.push(_cart);
